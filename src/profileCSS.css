@@ -1,0 +1,170 @@
+.left-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-dp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-border{
+    padding: 10px;
+}
+.left{
+    height: 50%;
+}
+.left-border{
+    border-radius: 10px;
+}
+.left-border:hover{
+    cursor: pointer;
+    transform: translateX(3px);
+    background-color:  white;
+    border-right-width: 50%;
+    border-right-style: solid;
+}
+.profile-card-head{
+    border-bottom: 2px solid white;
+}
+.profile-card-head > p{
+    padding: 5px;
+}
+
+.profile-data
+{
+    display: inline;
+}
+.one{
+    border-bottom: 2px solid white;
+    padding: 5px;
+}
+.profile-data > div {
+    display: flex;
+    align-items: center;
+}
+
+
+/* This is done to set the border of profile black when the page is loaded */
+#def{ 
+    transform: translateX(3px);
+    border-radius: 10px;
+    border-right-width: 50%;
+    border-right-style: solid;
+}
+
+
+
+
+.edit-profile-data{
+    display: none;
+}
+.Past-works{
+    display: none;
+}
+
+.safety{
+    transform: translateX(130px);
+}
+.end:hover{
+    cursor: pointer;
+
+}
+
+.edit-area{
+    opacity: 0;
+}
+
+.carousel-item{
+    border: 10px black;
+    border-style: groove;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.cont{
+    margin: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.img-cont{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid black;
+
+}
+
+
+@keyframes fadein {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeout {
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+@keyframes move-left {
+    0%{
+        transform: translateX(130px);
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 0;
+    }
+}
+
+@keyframes move-right {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(-130px);
+        opacity: 1;
+    }
+}
+nav{
+    background-color: transparent;
+}
+body{
+    background-image: url('../img/bgimg.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 50vh;
+}
+#sticky-nav{
+    position: sticky;
+    top: 0px;
+}
+.profile-bag{
+    background-color: rgba(255, 255, 255, 0.592);
+    border-radius: 6px;
+}
+#data-change{
+    background-image: url('../img/bg2.png');
+}
+#credentials-data{
+    background-color: rgba(255, 255, 255, 0.732);
+    border-radius: 10px;
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="../src/style.css" />
+    <link rel="stylesheet" href="../src/profileCSS.css" />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+
+    <link rel="shortcut icon" href="../img/cola.png" type="image/png">
+
+    <title>Collageum</title>
+  </head>
+  <body style="background-color: aquamarine;">
+
+
+
+
+
+
+    <!-- ------------------------------------Navbar Starts------------------------------------------------ -->
+    <header>
+      <nav class="z-depth-0">
+        <div id="sticky-nav">
+        <div class="nav-wrapper">
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down navbar-list">
+            <li><a href="../dist/homepage.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a class="btn signout-profile" style="background-color: #ef61b5;" href="#">Log Out</a></li>
+            <li><a href="./software.html" class="btn-small" style="background-color: #ef61b5;">Get Started</a></li>
+            <li>
+              <a href="#signin" class="btn-small modal-trigger nav-signin" style="background-color: #ef61b5;"
+                >Sign In</a
+              >
+            </li>
+            <li class="profile-drop-cont">
+              <a
+                class="profile-drop"
+                href="../dist/profile.html"
+                data-target="dropdown1"
+                ><img src="../img/def-dp.png" class="dp-nav-prof responsive-image circle" style="height:50px; width: 50px;"
+              /></a>
+            </li>
+            <div>
+          </ul>
+          <ul class="right hide-on-large-only">
+            <li><a href="./software.html" class="btn-small" style="background-color: #ef61b5;">Get Started</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+      <!-------------------------------------------- NAVBAR ENDS ---------------------------------------------->
+      
+      
+
+      <!-- -------------------------------Modals----------------------------------- -->
+      
+      
+      <!----------------------------------- Modal SignIn ------------------------------------------>
+      <div class="modal" id="signin" style="border-radius: 10px">
+        <!------------- modal Header -------------------->
+        <div class="modal-header">
+          <div class="row">
+            <div class="col s11 m11 l11">
+              <div class="modal-close-indicator btn-small">close</div>
+            </div>
+            <div class="col s1 m1 l1">
+              <a href="#" class="modal-close"
+                ><i
+                  class="material-icons circle red white-text waves-effect waves-green"
+                  >close</i
+                ></a
+              >
+            </div>
+          </div>
+      
+         <!------------------------Modal body--------------------->
+
+          <div class="row">
+            <div class="col s6 m6 l6">
+              <div class="left-def">
+                <img
+                  src="../img/logo-mobile.png"
+                  alt=""
+                  class="responsive-img rounded"
+                />
+                <p class="activate-at-left">
+                  Don't Have an account ?
+                  <a
+                    href="#"
+                    class="btn white z-depth-2 black-text changer-right"
+                    >Register</a
+                  >
+                </p>
+                <p class="activate-at-right">
+                  Already Have an account ?
+                  <a
+                    href="#"
+                    class="btn white z-depth-2 black-text changer-left"
+                    >Sign In</a
+                  >
+                </p>
+              </div>
+              <div class="left-cover">
+                <h5 class="center">Hola !</h5>
+                <form id="form-signup">
+                  <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="signup-email" required />
+                    <label for="signup-email">Email Address</label>
+                  </div>
+                  <div class="input-field">
+                    <i class="material-icons prefix">password</i>
+                    <input type="password" id="signup-password" required />
+                    <label for="signup-password">Your Password</label>
+                  </div>
+                  <div class="input-field">
+                    <i class="material-icons prefix">password</i>
+                    <input type="password" id="signup-password-2" required />
+                    <label for="signup-password-2">Confirm Your Password</label>
+                  </div>
+                  <p class="dontmatch"> Passwords dont Match</p>
+                  <div class="center">
+                    <div
+                      class="btn left-signup-btn"
+                      style="margin: 10px; display: block"
+                    >
+                      Sign Up
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+      
+            <div class="col s6 m6 l6">
+              <div class="right-def">
+                <h5 style="margin-bottom: 40px">Log In</h5>
+                <form id="form-signin">
+                  <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="signin-email" required />
+                    <label for="signin-email">Email Address</label>
+                  </div>
+                  <div class="input-field">
+                    <i class="material-icons prefix">password</i>
+                    <input type="password" id="signin-password" required />
+                    <label for="signin-password">Your Password</label>
+                      <p class="incorrect"></p>
+                  </div>
+                  <div class="center">
+                    <div
+                      class="btn cyan accent-4 LogIn-btn-modal"
+                    >
+                      Log In
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- -------------------Profile Credentials change Login Modal-------------------------------->
+      <div class="modal" id="data-change" style="border-radius: 10px;">
+        <div class="row">
+          <div class="col s11"></div>
+          <div class="col s1 end">
+            <i class="material-icons red white-text circle">close</i>
+          </div>
+        </div>
+        <div class="row" id="credentials-data" style="margin-top: 20px; margin-bottom: 50px; margin-left: 20px; margin-right: 20px;">
+          <div class="col s6 safety">
+            <h5 style="margin-bottom: 40px">Please Confirm That Its You !!</h5>
+            <form id="data-safety">
+              <div class="input-field">
+                <i class="material-icons prefix">email</i>
+                <input type="email" id="safety-email" required />
+                <label for="safety-email">Email Address</label>
+              </div>
+              <div class="input-field">
+                <i class="material-icons prefix">password</i>
+                <input type="password" id="safety-password" required />
+                <label for="safety-password">Your Password</label>
+                  <p class="safety-incorrect"></p>
+              </div>
+              <div class="center">
+                <div
+                  class="btn continue-safety" style="background-color: #ef61b5;"
+                >
+                  Continue
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+
+          <div class="col s6 edit-area">
+            <h5 style="margin-bottom: 40px">Change Details</h5>
+            <form id="changed-data">
+              <div class="input-field">
+                <i class="material-icons prefix">border_color</i>
+                <input type="text" id="changed-username" required>
+                <label for="changed-username">Enter New Username</label>
+              </div>
+              <div class="input-field">
+                <i class="material-icons prefix">add_a_photo</i>
+                <input type="file" id="changed-dp" hidden>
+                <div class="btn-small cyan accent-4 white-text rounded submit-new-dp">Browse</div>
+              </div>
+            </form>
+            <div class="btn data-submit" style="margin-top: 100px;">Submit</div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      <!--------------- Mobile Sidenav -------------------->
+      <div class="sidenav" id="mobile-menu">
+        <li class="Mobile-head">
+          <img src="../img/lastlogo2.png" class="responsive-img" />
+        </li>
+        <li class="mob-close Homepage-profilepage"><a href="../dist/homepage.html">Home</a></li>
+        <li class="mob-close"><a href="#">About</a></li>
+        <li class="mob-close logout-profile-page"><a href="#">Log Out</a></li>
+      </div>
+      <!-- mobile sidenav ends here  -->
+      </header>
+
+    <div class="row">
+      <div class="col s2"></div>
+
+
+      <div class="col s8 rounded profile-bag" style="margin-top: 5%; padding: 10px; margin-left: 20%;">
+        <div class="row">
+          <div class="col s4">
+              <div class="left-dp">
+                <img src="../img/def-dp.png" class="responsive-img circle profile-tab-img" style="height: 150px; width: 150px;">
+              </div>
+              <div class="left-data ">
+                  <ul>
+                    <li class="left-border" id="def">Profile</li>
+                    <li class="left-border "><a href="#carousel-data" style="text-decoration: none;">Past Works</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col s8">
+            <div class="profile-data trig"></div>
+          </div>
+      </div>        
+      </div>
+
+
+
+      <div class="col s2"></div>
+    </div>
+
+    <div id="carousel-data">
+      <div class="carousel">
+        <a class="carousel-item"><img src="../img/No_img.jpg" alt="" class="caru"></a>
+        <a class="carousel-item"><img src="../img/No_img.jpg" alt="" class="caru"></a>
+        <a class="carousel-item"><img src="../img/No_img.jpg" alt="" class="caru"></a>
+        <a class="carousel-item"><img src="../img/No_img.jpg" alt="" class="caru"></a>
+        <a class="carousel-item extra" href="../dist/pastworks.html" style="border: none;"><img src="../img/blur.jpeg" alt="" class="caru"><div class="btn show-more" style="margin: 5px;">Show More</div></div></a>
+      </div>
+    </div>
+
+
+
+
+
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../src/index.js"></script>
+    <script src="auth.js"></script>
+    <script src="./profile.js"></script>
+    <script src="../src/profile.js"></script>
+  </body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="../src/style.css" />
+    <link rel="shortcut icon" href="../img/cola.png" type="image/png">
+
+    <title>Collageum</title>
+  </head>
+  <body>
+
+
+
+
+    <!-- ------------------------------------Navbar Starts------------------------------------------------ -->
+    <header>
+      <nav class="z-depth-0">
+        <div id="sticky-nav">
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down navbar-list">
+            <li class="black-text"><a href="../dist/homepage.html">Home</a></li>
+            <li><a href="#wesite-info-large">About</a></li>
+            <li><a class="btn signout-home" style="background-color: #ef61b5;" href="#">Log Out</a></li>
+            <li><a href="../dist/software.html" class="btn-small" style="background-color: #ef61b5;">Get Started</a></li>
+            <li>
+              <a href="#signin" class="btn-small modal-trigger nav-signin" style="background-color: #ef61b5;"
+                >Sign In</a
+              >
+            </li>
+            <li class="profile-drop-cont">
+              <a
+                class="profile-drop"
+                href="../dist/profile.html"
+                data-target="dropdown1"
+                ><img src="../img/def-dp.png" class="dp-nav responsive-image circle" style="height: 50px; width: 50px;">
+            </li>
+            <div>
+          </ul>
+          <ul class="right hide-on-large-only">
+            <li><a href="../dist/software.html" class="btn-small" style="background-color: #ef61b5;">Get Started</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-------------------------------------------- NAVBAR ENDS ---------------------------------------------->
+      
+      <!--------------- Mobile Sidenav -------------------->
+      <div class="sidenav" id="mobile-menu">
+        <li class="Mobile-head">
+          <img src="../img/lastlogo2.png" class="responsive-img" />
+          <li class="profile-homepage"><a href="../dist/profile.html">Profile</a></li>
+        </li>
+        <li class="mob-close"><a href="#">Home</a></li>
+        <li class="mob-close"><a href="#">About</a></li>
+        <li class="mob-close signin-home-page"><a href="#signin" class="modal-trigger">Sign In</a></li>
+        <li class="mob-close signout-home-page"><a href="#">Log Out</a></li>
+      </div>
+      <!-- mobile sidenav ends here  -->
+      </header>
+
+
+      <div class="chip-cont"></div>
+      <div class="texts-1 hide-on-med-and-down">
+        <p class="texts-1-big">An Easy to use Photo Collage maker</p>
+        <p class="texts-1-small">Collageum has everything you need to easily edit photos and make photo collages.</p>
+      </div>
+      
+      <div class="image-container hide-on-med-and-down">
+        <img src="../img/lastlogo2.png" class="slider-1">
+    </div>
+    
+    <div class="image-container-2 hide-on-large-only"></div>
+    <p class="texts-2-big hide-on-large-only">An Easy to use Photo Collage maker</p>
+    <p class="texts-2-small hide-on-large-only">Collageum has everything you need to easily edit photos and make photo collages.</p>
+
+
+    <div class="website-info-2 hide-on-large-only">
+      <div class="info-cont" id="info-cont">
+        <div class="data1">
+          <img src="../img/choose layout.png" alt="">
+          <p class="bigger-text-info">Choose a design</p>
+          <p>First , Select the layout you want from listed layouts</p>
+        </div>
+        <div class="data2">
+          <img src="../img/photo.png" alt="">
+          <p class="bigger-text-info">Add photos</p>
+          <p>Now add your photos and customize them according to your choice</p>
+        </div>
+        <div class="data3">
+          <img src="../img/love.png" alt="">
+          <p class="bigger-text-info">Download photos</p>
+          <p>Once the editing is done, it can be downloaded and shared wth the world</p>
+        </div>
+      </div>
+    </div>
+    <div class="website-info hide-on-med-and-down" id="website-info-large">
+      <div class="info-cont" id="info-cont">
+        <div class="data1">
+          <img src="../img/choose layout.png" alt="">
+          <p class="bigger-text-info">Choose a design</p>
+          <p>First , Select the layout you want from listed layouts</p>
+        </div>
+        <div class="data2">
+          <img src="../img/photo.png" alt="">
+          <p class="bigger-text-info">Add photos</p>
+          <p>Now add your photos and customize them according to your choice</p>
+        </div>
+        <div class="data3">
+          <img src="../img/love.png" alt="">
+          <p class="bigger-text-info">Download photos</p>
+          <p>Once the editing is done, it can be downloaded and shared wth the world</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="contact-us"></div>
+    <div class="contact-us-main">
+      <p class="header">Contact Us</p>
+      <form action="" class="contact-data">
+        <div class="input-field non-btm">
+          <i class="material-icons prefix">email</i>
+          <input type="email" id="email-user" required />
+          <label for="email-user" class="black-text">Email Address</label>
+        </div>
+        <div class="input-field non-btm">
+          <i class="material-icons prefix">password</i>
+          <input type="password" id="email-user" required />
+          <label for="email-user" class="black-text">Password</label>
+        </div>
+        <div class="input-field btm">
+          <i class="material-icons prefix">keyboard</i>
+          <textarea  id="email-body" cols="10" rows="30" style="resize: none;"></textarea>
+          
+        </div>
+      </form>
+    </div> -->
+
+
+      <!-- -------------------------------Modals----------------------------------- -->
+      
+      
+      <!----------------------------------- Modal SignIn ------------------------------------------>
+      <div class="modal" id="signin" style="border-radius: 10px">
+        <!------------- modal Header -------------------->
+        <div class="modal-header">
+          <div class="row">
+            <div class="col s11 m11 l11">
+              <div class="modal-close-indicator btn-small">close</div>
+            </div>
+            <div class="col s1 m1 l1">
+              <a href="#" class="modal-close"
+                ><i
+                  class="material-icons circle red white-text waves-effect waves-green"
+                  >close</i
+                ></a
+              >
+            </div>
+          </div>
+      
+         <!------------------------Modal body--------------------->
+
+          <div class="row">
+            <div class="col s6 m6 l6">
+              <div class="left-def">
+                <img
+                  src="../img/lastlogo2.png"
+                  alt=""
+                  class="responsive-img rounded"
+                />
+                <p class="activate-at-left">
+                  Don't Have an account ?
+                  <a
+                    href="#"
+                    class="btn white z-depth-2 black-text changer-right"
+                    >Register</a
+                  >
+                </p>
+                <p class="activate-at-right">
+                  Already Have an account ?
+                  <a
+                    href="#"
+                    class="btn white z-depth-2 black-text changer-left"
+                    >Sign In</a
+                  >
+                </p>
+              </div>
+              <div class="left-cover">
+                <h5 class="center">Hola !</h5>
+                <form id="form-signup">
+                  <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="signup-email" required />
+                    <label for="signup-email">Email Address</label>
+                  </div>
+                  <div class="input-field">
+                    <i class="material-icons prefix">password</i>
+                    <input type="password" id="signup-password" required />
+                    <label for="signup-password">Your Password</label>
+                  </div>
+                  <div class="input-field">
+                    <i class="material-icons prefix">password</i>
+                    <input type="password" id="signup-password-2" required />
+                    <label for="signup-password-2">Confirm Your Password</label>
+                  </div>
+                  <p class="dontmatch"> Passwords dont Match</p>
+                  <div class="center">
+                    <div
+                      class="btn left-signup-btn"
+                      style="margin: 10px; display: block; background-color: #ef61b5;"
+                    >
+                      Sign Up
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+      
+            <div class="col s6 m6 l6">
+              <div class="right-def">
+                <h5 style="margin-bottom: 40px">Log In</h5>
+                <form id="form-signin">
+                  <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="signin-email" required />
+                    <label for="signin-email">Email Address</label>
+                  </div>
+                  <div class="input-field">
+                    <i class="material-icons prefix">password</i>
+                    <input type="password" id="signin-password" required />
+                    <label for="signin-password">Your Password</label>
+                      <p class="incorrect"></p>
+                  </div>
+                  <div class="center">
+                    <div
+                      class="btn LogIn-btn-modal" style="background-color: #ef61b5;"
+                    >
+                      Log In
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------Password Set Modal--------------------------- -->
+
+
+
+
+
+      
+      <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../src/index.js"></script>
+    <script src="auth.js"></script>
+
+
+  </body>
+</html>
