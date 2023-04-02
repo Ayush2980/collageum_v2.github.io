@@ -62,6 +62,8 @@ onAuthStateChanged(auth , (user) => {
       const Refstore = ref(storage , `Collageum/${user.uid}`);
       listAll(Refstore).then((res) => {
         let t = 0;
+        console.log(res)
+        console.log(res.items)
         res.items.forEach((itemsRef) => {
           getDownloadURL(itemsRef).then((url) => {
             photoGrid.innerHTML += 
@@ -92,7 +94,6 @@ onAuthStateChanged(auth , (user) => {
             // a.href = canvas.toDataURL("Image/jpeg");
             // a.download = new Date().getTime;
             // a.click();
-
 
 
             html2canvas( document.getElementById(`img-${i}`), { allowTaint: true }).then(function (canvas) {

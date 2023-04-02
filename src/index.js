@@ -71,12 +71,3 @@ for(let i = 0 ; i< 5 ; ++i){
         elem1[0].M_Sidenav.close();
     })
 }
-
-//Slider animation
-const slide1 = document.getElementsByClassName("slider-1")[0];
-const slide2 = document.getElementsByClassName("slider-2")[0];
-const slide3 = document.getElementsByClassName("slider-3")[0];
-function animateSlider(previmg , nowImg){
-    previmg.style.display ="none";
-    nowImg.style.display ="inline";
-}

@@ -60,12 +60,12 @@ onAuthStateChanged(auth, (user) => {
         if(NavbarDpProfile.src == "http://127.0.0.1:5501/img/def-dp.png"){
             NavbarDpProfile.src = url;
         }else{
-            console.log(" ");
+            console.log("");
         }
         if(profileTabImg.src == "http://127.0.0.1:5501/img/def-dp.png"){
             profileTabImg.src = url;
         }else{
-            console.log(" ");
+            console.log("");
         }
     })
 
